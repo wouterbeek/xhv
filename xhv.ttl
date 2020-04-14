@@ -49,7 +49,7 @@ xhv:banner
   a rdf:Property;
   rdfs:comment """contains
       the prime heading or internal title of a page. """;
-  rdfs:member role:-properties.
+  rdfs:member xhv:relrev-properties.
 
 xhv:bookmark
   a rdf:Property;
@@ -102,13 +102,13 @@ xhv:complementary
   a rdf:Property;
   rdfs:comment """indicates that the section supports but is
       separable from the main content of resource.""";
-  rdfs:member role:-properties.
+  rdfs:member xhv:relrev-properties.
 
 xhv:contentinfo
   a rdf:Property;
   rdfs:comment """contains meta information about the
       content on the page or the page as a whole.""";
-  rdfs:member role:-properties.
+  rdfs:member xhv:relrev-properties.
 
 xhv:contents
   a rdf:Property;
@@ -129,7 +129,7 @@ xhv:copyright
 xhv:definition
   a rdf:Property;
   rdfs:comment "indicates the definition of a term or concept.";
-  rdfs:member role:-properties.
+  rdfs:member xhv:relrev-properties.
 
 xhv:dialog
   a rdf:Property;
@@ -278,7 +278,7 @@ xhv:main
   a rdf:Property;
   rdfs:comment """acts as the
       main content of the document. """;
-  rdfs:member role:-properties.
+  rdfs:member xhv:relrev-properties.
 
 xhv:marquee
   a rdf:Property;
@@ -329,7 +329,7 @@ xhv:navigation
   a rdf:Property;
   rdfs:comment """indicates a collection of items suitable for
       navigating the document or related documents.""";
-  rdfs:member role:-properties.
+  rdfs:member xhv:relrev-properties.
 
 xhv:next
   a rdf:Property;
@@ -344,7 +344,7 @@ xhv:note
   rdfs:comment """indicates
       the content is parenthetic or ancillary to the main content of the
       resource. """;
-  rdfs:member role:-properties.
+  rdfs:member xhv:relrev-properties.
 
 xhv:option
   a rdf:Property;
@@ -398,7 +398,7 @@ xhv:region
 
 xhv:relrev-properties
   a rdf:Bag;
-  rdfs:member role:-properties.
+  rdfs:member xhv:relrev-properties.
 
 role:
   a rdf:Bag, rdf:Property;
@@ -410,7 +410,7 @@ role:
   rdfa:term "role";
   rdfa:uri "http://www.w3.org/1999/xhtml/vocab#role".
 
-role:-properties
+xhv:relrev-properties
   a rdf:Bag, rdfs:member.
 
 xhv:row
@@ -438,7 +438,7 @@ xhv:search
   a rdf:Property;
   rdfs:comment """indicates
       that the section provides a search facility. """;
-  rdfs:member role:-properties.
+  rdfs:member xhv:relrev-properties.
 
 xhv:section
   a rdf:Property;
